@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Valency Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-card">
+            <h1>Element Valency Quiz</h1>
+            
+            <div id="elementSelection">
+                <h2>Select elements to include in the quiz:</h2>
+                <div id="elementButtons" class="element-grid"></div>
+                <button id="startQuiz" class="action-button" style="display:none;">Start Quiz</button>
+            </div>
+            
+            <div id="quiz" style="display:none;">
+                <h2>Quiz</h2>
+                <div class="question-card">
+                    <p id="quizQuestion"></p>
+                    <div id="answerButtons" class="answer-grid"></div>
+                </div>
+            </div>
+            
+            <div id="results" style="display:none;">
+                <h2>Quiz Results</h2>
+                <div class="results-content">
+                    <p id="score" class="score"></p>
+                    <div class="elements-summary">
+                        <p id="learnedElements"></p>
+                        <p id="toLearnElements"></p>
+                    </div>
+                    <button id="restartQuiz" class="action-button">Restart Quiz</button>
+                </div>
+            </div>
+
+            <div id="debugInfo" class="debug-info">
+                <p>Debug Time: <span id="debugTime">0</span> seconds</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
